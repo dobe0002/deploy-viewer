@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Build Rows tests Snapshot test 1`] = `
+<Row
+  style={
+    Object {
+      "borderTop": "1px solid #ccc",
+      "paddingBottom": "15px",
+      "paddingTop": "15px",
+    }
+  }
+  tag="div"
+  widths={
+    Array [
+      "xs",
+      "sm",
+      "md",
+      "lg",
+      "xl",
+    ]
+  }
+>
+  <Col
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+    xs="2"
+  >
+    <h2
+      className="h5"
+    >
+      My application
+    </h2>
+  </Col>
+  <Col
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <div
+      key="3"
+      style={
+        Object {
+          "display": "inline-block",
+          "marginRight": "10px",
+        }
+      }
+    >
+      <Status
+        appTitle="My application"
+        code="G"
+        dateString="11/02/2019"
+        description="Good deployment"
+        icon={true}
+        id="popper3"
+        note="Hooray everything went to plan"
+        popOver={true}
+        statuses={Array []}
+        tableCell={false}
+      />
+    </div>
+    <div
+      key="5"
+      style={
+        Object {
+          "display": "inline-block",
+          "marginRight": "10px",
+        }
+      }
+    >
+      <Status
+        appTitle="My application"
+        code="O"
+        dateString="11/10/2019"
+        description="Outage"
+        icon={true}
+        id="popper5"
+        note="People are trashing the database"
+        popOver={true}
+        statuses={Array []}
+        tableCell={false}
+      />
+    </div>
+  </Col>
+</Row>
+`;

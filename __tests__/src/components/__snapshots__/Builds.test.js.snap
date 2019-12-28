@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Builds  tests Snapshot test 1`] = `
+<Container
+  fluid={true}
+  tag="div"
+>
+  <FilterDateAppGroup
+    appGroups={Object {}}
+    currentAppGroup=""
+    dataTitle="Deploy Status"
+    endDate={2019-12-15T06:00:00.000Z}
+    onAppGroupChange={[Function]}
+    onEndDateChange={[Function]}
+    onStartDateChange={[Function]}
+    startDate={2019-11-01T05:00:00.000Z}
+  />
+  <BuildRow
+    appStatus={
+      Array [
+        Object {
+          "date": 2019-12-01T06:00:00.000Z,
+          "dateSort": 20191201,
+          "dateString": "12/01/2019",
+          "note": "Users could not log in",
+          "row": 10,
+          "status": "C",
+          "statusDescription": "Deployment with Customer Impact",
+        },
+        Object {
+          "date": 2019-12-01T06:00:00.000Z,
+          "dateSort": 20191201,
+          "dateString": "12/01/2019",
+          "note": "Fixed issues from the morning deployment",
+          "row": 11,
+          "status": "G",
+          "statusDescription": "Good deployment",
+        },
+        Object {
+          "date": 2019-12-15T06:00:00.000Z,
+          "dateSort": 20191215,
+          "dateString": "12/15/2019",
+          "note": ":-)",
+          "row": 9,
+          "status": "G",
+          "statusDescription": "Good deployment",
+        },
+      ]
+    }
+    appTitle="Cap"
+    endDate={2019-12-15T06:00:00.000Z}
+    startDate={2019-11-01T05:00:00.000Z}
+  />
+  <BuildRow
+    appStatus={
+      Array [
+        Object {
+          "date": 2019-11-15T06:00:00.000Z,
+          "dateSort": 20191115,
+          "dateString": "11/15/2019",
+          "note": "Let's try some \\"BOLD\\" text",
+          "row": 8,
+          "status": "C",
+          "statusDescription": "Deployment with Customer Impact",
+        },
+      ]
+    }
+    appTitle="Ethos"
+    endDate={2019-12-15T06:00:00.000Z}
+    startDate={2019-11-01T05:00:00.000Z}
+  />
+  <BuildRow
+    appStatus={
+      Array [
+        Object {
+          "date": 2019-11-02T05:00:00.000Z,
+          "dateSort": 20191102,
+          "dateString": "11/02/2019",
+          "note": "Hooray everything went to plan",
+          "row": 3,
+          "status": "G",
+          "statusDescription": "Good deployment",
+        },
+        Object {
+          "date": 2019-11-10T06:00:00.000Z,
+          "dateSort": 20191110,
+          "dateString": "11/10/2019",
+          "note": "People are trashing the database",
+          "row": 5,
+          "status": "O",
+          "statusDescription": "Outage",
+        },
+        Object {
+          "date": 2019-12-01T06:00:00.000Z,
+          "dateSort": 20191201,
+          "dateString": "12/01/2019",
+          "note": "This is a note with
+
+Line breaks",
+          "row": 6,
+          "status": "G",
+          "statusDescription": "Good deployment",
+        },
+        Object {
+          "date": 2019-12-02T06:00:00.000Z,
+          "dateSort": 20191202,
+          "dateString": "12/02/2019",
+          "note": "",
+          "row": 7,
+          "status": "C",
+          "statusDescription": "Deployment with Customer Impact",
+        },
+      ]
+    }
+    appTitle="Picker"
+    endDate={2019-12-15T06:00:00.000Z}
+    startDate={2019-11-01T05:00:00.000Z}
+  />
+  <BuildRow
+    appStatus={
+      Array [
+        Object {
+          "date": 2019-11-01T05:00:00.000Z,
+          "dateSort": 20191101,
+          "dateString": "11/01/2019",
+          "note": "Ooopsie!",
+          "row": 2,
+          "status": "B",
+          "statusDescription": "Bad Deployment",
+        },
+        Object {
+          "date": 2019-11-10T06:00:00.000Z,
+          "dateSort": 20191110,
+          "dateString": "11/10/2019",
+          "note": "Some stuff happened but it was ALL GOOD",
+          "row": 4,
+          "status": "G",
+          "statusDescription": "Good deployment",
+        },
+      ]
+    }
+    appTitle="Training Hub"
+    endDate={2019-12-15T06:00:00.000Z}
+    startDate={2019-11-01T05:00:00.000Z}
+  />
+</Container>
+`;

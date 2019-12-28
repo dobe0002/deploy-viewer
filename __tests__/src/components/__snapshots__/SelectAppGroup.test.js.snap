@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectAppGroup component tests Snapshot test 1`] = `
+<FormGroup
+  tag="div"
+>
+  <Label
+    for="selectAppGroup"
+    tag="label"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    App
+  </Label>
+  <Input
+    id="selectAppGroup"
+    name="select"
+    onChange={[Function]}
+    type="select"
+    value=""
+  >
+    <option
+      value=""
+    >
+      All Applications
+    </option>
+    <option
+      value="HR"
+    >
+      Human Resources
+    </option>
+    <option
+      value="RAS"
+    >
+      Research
+    </option>
+  </Input>
+</FormGroup>
+`;

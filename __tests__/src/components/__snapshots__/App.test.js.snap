@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App  tests Snapshot tests 1`] = `
+<Component
+  basename=""
+>
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-light"
+  >
+    <span
+      className="navbar-brand"
+    >
+      AppDev RAS/C Deploy Status
+    </span>
+    <div
+      className="navbar"
+      id="navbarNav"
+    >
+      <ul
+        className="navbar-nav"
+      >
+        <li
+          className="nav-item"
+        >
+          <NavLink
+            activeClassName="active"
+            className="nav-link"
+            exact={true}
+            to="/deploys"
+          >
+            Deploys
+          </NavLink>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <NavLink
+            activeClassName="active"
+            className="nav-link"
+            to="/timeline"
+          >
+            Timeline
+          </NavLink>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="https://docs.google.com/spreadsheets/d/1234567890/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Google Sheet
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <Switch>
+      <Route
+        path="/deploys//startDate/:startDate/endDate/:endDate"
+        render={[Function]}
+      />
+      <Route
+        path="/deploys/:appGroup/startDate/:startDate/endDate/:endDate"
+        render={[Function]}
+      />
+      <Route
+        path="/deploys/:appGroup?"
+        render={[Function]}
+      />
+      <Route
+        path="/timeline//startDate/:startDate/endDate/:endDate"
+        render={[Function]}
+      />
+      <Route
+        path="/timeline/:appGroup/startDate/:startDate/endDate/:endDate"
+        render={[Function]}
+      />
+      <Route
+        path="/timeline/:appGroup?"
+        render={[Function]}
+      />
+      <Route
+        exact={true}
+        path="/"
+      >
+        <Redirect
+          to="/deploys"
+        />
+      </Route>
+      <Route
+        path="/"
+      >
+        <FourOhFour />
+      </Route>
+    </Switch>
+  </main>
+</Component>
+`;

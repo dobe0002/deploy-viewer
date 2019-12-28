@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
+<styled.div>
+  <Row
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Card
+        tag="div"
+      >
+        <CardBody
+          tag="div"
+        >
+          <Form
+            inline={true}
+            tag="form"
+          >
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for="timelineStartDate"
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Start
+              </Label>
+              <t
+                allowSameDay={false}
+                dateFormat="MM/dd/yyyy"
+                dateFormatCalendar="LLLL yyyy"
+                disabled={false}
+                disabledKeyboardNavigation={false}
+                dropdownMode="scroll"
+                id="timelineStartDate"
+                inlineFocusSelectedMonth={false}
+                maxDate={2019-03-02T06:00:00.000Z}
+                monthsShown={1}
+                nextMonthButtonLabel="Next Month"
+                nextYearButtonLabel="Next Year"
+                onBlur={[Function]}
+                onCalendarClose={[Function]}
+                onCalendarOpen={[Function]}
+                onChange={[Function]}
+                onClickOutside={[Function]}
+                onFocus={[Function]}
+                onInputClick={[Function]}
+                onInputError={[Function]}
+                onKeyDown={[Function]}
+                onMonthChange={[Function]}
+                onSelect={[Function]}
+                onYearChange={[Function]}
+                preventOpenOnFocus={false}
+                previousMonthButtonLabel="Previous Month"
+                previousYearButtonLabel="Previous Year"
+                readOnly={false}
+                renderDayContents={[Function]}
+                selected={2019-02-01T06:00:00.000Z}
+                shouldCloseOnSelect={true}
+                showMonthYearPicker={false}
+                showPopperArrow={true}
+                showPreviousMonths={false}
+                showQuarterYearPicker={false}
+                showTimeInput={false}
+                showTimeSelect={false}
+                strictParsing={false}
+                timeCaption="Time"
+                timeInputLabel="Time"
+                timeIntervals={30}
+                withPortal={false}
+              />
+            </FormGroup>
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for="timelineEndDate"
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                End
+              </Label>
+              <t
+                allowSameDay={false}
+                dateFormat="MM/dd/yyyy"
+                dateFormatCalendar="LLLL yyyy"
+                disabled={false}
+                disabledKeyboardNavigation={false}
+                dropdownMode="scroll"
+                id="timelineEndDate"
+                inlineFocusSelectedMonth={false}
+                minDate={2019-02-01T06:00:00.000Z}
+                monthsShown={1}
+                nextMonthButtonLabel="Next Month"
+                nextYearButtonLabel="Next Year"
+                onBlur={[Function]}
+                onCalendarClose={[Function]}
+                onCalendarOpen={[Function]}
+                onChange={[Function]}
+                onClickOutside={[Function]}
+                onFocus={[Function]}
+                onInputClick={[Function]}
+                onInputError={[Function]}
+                onKeyDown={[Function]}
+                onMonthChange={[Function]}
+                onSelect={[Function]}
+                onYearChange={[Function]}
+                preventOpenOnFocus={false}
+                previousMonthButtonLabel="Previous Month"
+                previousYearButtonLabel="Previous Year"
+                readOnly={false}
+                renderDayContents={[Function]}
+                selected={2019-03-02T06:00:00.000Z}
+                shouldCloseOnSelect={true}
+                showMonthYearPicker={false}
+                showPopperArrow={true}
+                showPreviousMonths={false}
+                showQuarterYearPicker={false}
+                showTimeInput={false}
+                showTimeSelect={false}
+                strictParsing={false}
+                timeCaption="Time"
+                timeInputLabel="Time"
+                timeIntervals={30}
+                withPortal={false}
+              />
+            </FormGroup>
+            <SelectAppGroup
+              appGroups={Object {}}
+              currentAppGroup=""
+              getChange={[Function]}
+            />
+          </Form>
+        </CardBody>
+      </Card>
+    </Col>
+  </Row>
+</styled.div>
+`;

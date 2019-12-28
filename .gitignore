@@ -1,0 +1,10 @@
+node_modules
+coverage/
+build/
+.npmrc
+.vscode/
+docker-compose.yml
+ToDo.txt
+npm-debug.log
+*.tar
+*.tgz
