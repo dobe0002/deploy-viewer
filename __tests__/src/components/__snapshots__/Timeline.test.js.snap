@@ -13,7 +13,7 @@ exports[`Timeline component tests Snapshot test 1`] = `
     onAppGroupChange={[Function]}
     onEndDateChange={[Function]}
     onStartDateChange={[Function]}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
   <Row
     tag="div"
@@ -253,7 +253,7 @@ exports[`Timeline component tests Snapshot test 1`] = `
               appStatusArray={
                 Array [
                   Object {
-                    "date": 2019-11-02T05:00:00.000Z,
+                    "date": 2019-11-02T06:00:00.000Z,
                     "dateSort": 20191102,
                     "dateString": "11/02/2019",
                     "note": "Hooray everything went to plan",
@@ -348,7 +348,7 @@ Line breaks",
               appStatusArray={
                 Array [
                   Object {
-                    "date": 2019-11-01T05:00:00.000Z,
+                    "date": 2019-11-01T06:00:00.000Z,
                     "dateSort": 20191101,
                     "dateString": "11/01/2019",
                     "note": "Ooopsie!",

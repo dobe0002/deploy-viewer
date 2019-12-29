@@ -117,6 +117,7 @@ class GetSpreadsheetData {
       const month = parseInt(date[0], 10) - 1;
       const day = parseInt(date[1], 10);
       const jsDate = new Date(year, month, day);
+      jsDate.setUTCHours(6);
 
       deployData[appCode].status.push({
         row: i + 2,

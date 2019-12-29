@@ -32,7 +32,9 @@ describe('Builds  tests', () => {
   });
   test('Call HandleStartChange', () => {
     const wrapper = shallow(<Builds deployData={sampleProps.deployData} />);
-    expect(wrapper.state('startDate')).toEqual(new Date(2019, 10, 1));
+    expect(wrapper.state('startDate')).toEqual(
+      new Date('2019-11-01T06:00:00.000Z')
+    );
 
     const newDate = new Date(2019, 11, 12);
     wrapper.instance().handleStartChange(newDate);
@@ -41,9 +43,11 @@ describe('Builds  tests', () => {
 
   test('Call HandleEndChange', () => {
     const wrapper = shallow(<Builds deployData={sampleProps.deployData} />);
-    expect(wrapper.state('endDate')).toEqual(new Date(2019, 11, 15));
+    expect(wrapper.state('endDate')).toEqual(
+      new Date('2019-12-15T06:00:00.000Z')
+    );
 
-    const newDate = new Date(2019, 11, 12);
+    const newDate = new Date('2019-12-12T06:00:00.000Z');
     wrapper.instance().handleEndChange(newDate);
     expect(wrapper.state('endDate')).toEqual(newDate);
   });

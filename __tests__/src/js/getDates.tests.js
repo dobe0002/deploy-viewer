@@ -9,8 +9,8 @@ import deployData from '../../../__fixtures__/getDataFormat/sheetData';
 describe('Get Dates functions', () => {
   test('Get min and max dates from deploy data', () => {
     const dates = getStartEndDate(deployData);
-    expect(dates.min).toEqual(new Date(2019, 10, 1));
-    expect(dates.max).toEqual(new Date(2019, 11, 15));
+    expect(dates.min).toEqual(new Date('2019-11-01T06:00:00.000Z'));
+    expect(dates.max).toEqual(new Date('2019-12-15T06:00:00.000Z'));
   });
   test('Get all dates between two dates', () => {
     const min = new Date(2019, 10, 25);
