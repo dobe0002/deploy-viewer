@@ -1,6 +1,7 @@
 const path = require('path');
 const WebpackGitHash = require('webpack-git-hash');
 const fs = require('fs');
+const getInfo = require('./utils/setIndexHtml');
 
 const css = [];
 
@@ -31,25 +32,20 @@ module.exports = {
     new WebpackGitHash({
       cleanup: true,
       callback: versionHash => {
-        let indexHtml = fs.readFileSync('./build/index.html', 'utf8');
-        indexHtml = indexHtml.replace(
-          /<\/body>/,
-          `<script src='js/app-bundle.${versionHash}.js'></script></body>`
+        // Set index.html
+        const indexHtml = fs.readFileSync('./build/index.html', 'utf8');
+        const newHtml = getInfo.setIndexHtml(
+          indexHtml,
+          [`js/app-bundle.${versionHash}.js`],
+          css
         );
-        if (css.length > 0) {
-          css.forEach(cssFile => {
-            indexHtml = indexHtml.replace(
-              /<\/head>/,
-              `<link
-                href="${cssFile}"
-                rel="stylesheet"
-                type="text/css"
-              />
-              </head>`
-            );
-          });
-        }
-        fs.writeFileSync('./build/index.html', indexHtml);
+        fs.writeFileSync('./build/index.html', newHtml);
+
+        // create version file
+        fs.writeFileSync(
+          './build/version',
+          JSON.stringify(getInfo.getVersion())
+        );
       }
     })
   ],
@@ -69,13 +65,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              // name: 'css/[name].[ext]',
               name(file) {
-                if (process.env.NODE_ENV === 'development') {
-                  console.log('IN NODE ENV = DEVELOPMENT!!');
-                }
                 css.push(`css/${file.split('/').pop()}`);
-
                 return 'css/[name].[ext]';
               }
             }
@@ -97,7 +88,7 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpe?g|gif|html)$/,
+        test: /\.(png|jpe?g|gif)$/,
         use: [
           {
             loader: 'file-loader',
