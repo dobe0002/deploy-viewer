@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   build:
+    name: build and test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -13,3 +14,9 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run test
+  codequality:
+    runs-on: ubuntu-latest
+    name: code quality
+    needs: build
+    steps:
+      - run: npm run eslint
