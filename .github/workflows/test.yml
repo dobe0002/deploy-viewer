@@ -12,8 +12,19 @@ jobs:
         with:
           node-version: 10
       - name: Install and build
-          - run: npm ci
-          - run: npm run build
+        run: |
+          npm ci
+          npm run build
       - name: Tests
-          - run: npm run test
-      
+        run: npm run test
+      - name: Code quality
+        run: |
+          npm run eslint
+          npm run npmAuditJson
+          node utils/testCoverage.js
+      - name: If NOT master
+        if: github.ref != 'refs/heads/master'
+        run: echo ${{github.ref}}
+      - name: If master
+        if: github.ref == 'refs/heads/master'
+        run: echo Hello master
