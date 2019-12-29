@@ -17,4 +17,4 @@ jobs:
   codequality:
     needs: build
     steps:
-      run: npm run eslint
+      - run: npm run eslint
