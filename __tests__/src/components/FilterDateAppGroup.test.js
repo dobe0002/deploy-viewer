@@ -25,8 +25,8 @@ describe('FilterDateAppGroup  tests', () => {
     currentAppGroup = appGroup;
   };
   const sampleProps = {
-    startDate: new Date(2019, 1, 1),
-    endDate: new Date(2019, 2, 2),
+    startDate: new Date('2019-02-01T06:00:00.000Z'),
+    endDate: new Date('2019-03-02T06:00:00.000Z'),
     currentAppGroup: '',
     appGroups: {},
     onStartDateChange: setStartDateMock,
