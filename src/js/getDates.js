@@ -19,7 +19,14 @@ const getDates = (minDate, maxDate) => {
     start: minDate,
     end: maxDate
   });
-  return JSDateArray;
+  return JSDateArray.map(date => {
+    const newDate = new Date(date);
+    newDate.setUTCHours(6);
+    newDate.setUTCMinutes(0);
+    newDate.setUTCSeconds(0);
+    newDate.setUTCMinutes(0);
+    return newDate;
+  });
 };
 const convertStringToDate = dateString => {
   if (dateString === undefined) {
