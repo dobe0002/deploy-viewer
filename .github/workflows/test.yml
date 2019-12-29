@@ -16,5 +16,6 @@ jobs:
       - run: npm run test
   codequality:
     needs: build
+    runs-on: ubuntu-latest
     steps:
       - run: npm run eslint
