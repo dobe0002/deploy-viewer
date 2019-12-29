@@ -43,7 +43,7 @@ module.exports = {
 
         // create version file
         fs.writeFileSync(
-          './build/version',
+          './build/version.json',
           JSON.stringify(getInfo.getVersion())
         );
       }
