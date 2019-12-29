@@ -4,6 +4,8 @@ import GetData from '../js/getData';
 import Loading from './icons/Loading';
 import App from './App';
 import config from '../appConfig';
+// eslint-disable-next-line no-unused-vars
+import html from '../index.html';
 
 const container = document.getElementById('react-root');
 
