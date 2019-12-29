@@ -12,8 +12,9 @@ jobs:
         with:
           node-version: 10
       - name: Install and build
-          - run: npm ci
-          - run: npm run build
+        run: |
+          npm ci
+          npm run build
       - name: Tests
-          - run: npm run test
+        run: npm run test
       
