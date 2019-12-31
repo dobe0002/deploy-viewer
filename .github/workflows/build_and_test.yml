@@ -24,10 +24,11 @@ jobs:
           node utils/testCoverage.js
       - name: If not master
         if: github.ref != 'refs/heads/master'
-        env:
-          VERSION: $(node -p "require('./package.json').version")
-        run: echo "$VERSION"
-        #run: echo Commits to ${{github.ref}} will not be made into a release
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
       - name: If master
         if: github.ref == 'refs/heads/master'
         env:
