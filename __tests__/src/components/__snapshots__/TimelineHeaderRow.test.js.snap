@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Timeline component tests Snapshot test 1`] = `
+exports[`Timeline Header Row component tests Snapshot test 1`] = `
 <thead>
   <tr>
     <td />
