@@ -4,6 +4,7 @@ import GetData from '../js/getData';
 import Loading from './icons/Loading';
 import App from './App';
 import config from '../appConfig';
+import '../index.html';
 
 const container = document.getElementById('react-root');
 

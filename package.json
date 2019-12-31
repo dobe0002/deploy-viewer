@@ -10,7 +10,7 @@
     "buildArtifact": "npm i && npm run build && tar -zc -f $npm_package_name-$npm_package_version.tgz --exclude-from=excludeFromArtifact *",
     "buildDev": "webpack --progress --colors --watch",
     "clean": "rm -f package-lock.json && rm -rf node_modules && rm -rf build && npm i && npm run build",
-    "dev": "webpack-dev-server",
+    "dev": " webpack-dev-server",
     "eslint": "esw --ext .js,.jsx ",
     "eslint:watch": "esw --ext .js,.jsx --watch ",
     "npmAudit": "npm audit --registry=https://registry.npmjs.org ",
@@ -40,7 +40,7 @@
       "text-summary"
     ],
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|html)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     },
     "reporters": [
@@ -102,7 +102,6 @@
     "prettier": "1.19.1",
     "react-test-renderer": "^16.11.0",
     "style-loader": "^1.0.0",
-    "styled-components": "^4.4.0",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.9.0"

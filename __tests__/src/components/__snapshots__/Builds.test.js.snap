@@ -13,7 +13,7 @@ exports[`Builds  tests Snapshot test 1`] = `
     onAppGroupChange={[Function]}
     onEndDateChange={[Function]}
     onStartDateChange={[Function]}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
   <BuildRow
     appStatus={
@@ -49,7 +49,7 @@ exports[`Builds  tests Snapshot test 1`] = `
     }
     appTitle="Cap"
     endDate={2019-12-15T06:00:00.000Z}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
   <BuildRow
     appStatus={
@@ -67,13 +67,13 @@ exports[`Builds  tests Snapshot test 1`] = `
     }
     appTitle="Ethos"
     endDate={2019-12-15T06:00:00.000Z}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
   <BuildRow
     appStatus={
       Array [
         Object {
-          "date": 2019-11-02T05:00:00.000Z,
+          "date": 2019-11-02T06:00:00.000Z,
           "dateSort": 20191102,
           "dateString": "11/02/2019",
           "note": "Hooray everything went to plan",
@@ -114,13 +114,13 @@ Line breaks",
     }
     appTitle="Picker"
     endDate={2019-12-15T06:00:00.000Z}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
   <BuildRow
     appStatus={
       Array [
         Object {
-          "date": 2019-11-01T05:00:00.000Z,
+          "date": 2019-11-01T06:00:00.000Z,
           "dateSort": 20191101,
           "dateString": "11/01/2019",
           "note": "Ooopsie!",
@@ -141,7 +141,7 @@ Line breaks",
     }
     appTitle="Training Hub"
     endDate={2019-12-15T06:00:00.000Z}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
 </Container>
 `;

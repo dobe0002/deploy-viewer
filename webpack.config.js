@@ -1,6 +1,9 @@
 const path = require('path');
 const WebpackGitHash = require('webpack-git-hash');
 const fs = require('fs');
+const getInfo = require('./utils/setIndexHtml');
+
+const css = [];
 
 module.exports = {
   context: __dirname,
@@ -8,32 +11,45 @@ module.exports = {
     app: ['./src/components/index.jsx']
   },
   devServer: {
-    publicPath: '/client/build/',
-    historyApiFallback: true
+    contentBase: './build',
+    historyApiFallback: true,
+    publicPath: '/client/build'
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '[name].bundle.[githash].js',
-    sourceMapFilename: '[name].bundle.map'
+    filename: 'js/app-bundle.[githash].js',
+    chunkFilename: 'js/[name]-chunk.[githash].js',
+    sourceMapFilename: 'js/app-bundle.map'
   },
+
   resolve: {
     extensions: ['.js', '.json', '.jsx']
   },
   devtool: '#source-map',
   performance: { hints: false },
+
   plugins: [
     new WebpackGitHash({
       cleanup: true,
       callback: versionHash => {
-        let indexHtml = fs.readFileSync('./index.html', 'utf8');
-        indexHtml = indexHtml.replace(
-          /build\/app\.bundle\.\w+\.js/,
-          `build/app.bundle.${versionHash}.js`
+        // Set index.html
+        const indexHtml = fs.readFileSync('./build/index.html', 'utf8');
+        const newHtml = getInfo.setIndexHtml(
+          indexHtml,
+          [`js/app-bundle.${versionHash}.js`],
+          css
         );
-        fs.writeFileSync('./index.html', indexHtml);
+        fs.writeFileSync('./build/index.html', newHtml);
+
+        // create version file
+        fs.writeFileSync(
+          './build/version.json',
+          JSON.stringify(getInfo.getVersion())
+        );
       }
     })
   ],
+
   module: {
     rules: [
       {
@@ -45,17 +61,18 @@ module.exports = {
       },
       {
         test: /node_modules\/[a-zA-Z0-9-_/.]+\.css$/,
-
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: 'css/[name].[ext]'
+              name(file) {
+                css.push(`css/${file.split('/').pop()}`);
+                return 'css/[name].[ext]';
+              }
             }
           }
         ]
       },
-
       {
         test: /\.css$/, // https://javascriptplayground.com/css-modules-webpack-react/
         exclude: /node_modules/,
@@ -77,6 +94,17 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(html)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
             }
           }
         ]

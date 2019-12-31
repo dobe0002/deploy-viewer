@@ -6,7 +6,8 @@ export default [
     appGroupTitle: 'Student',
     status: [
       {
-        date: new Date(2019, 11, 1),
+        // date: new Date(2019, 11, 1),
+        date: new Date('2019-12-01T06:00:00.000Z'),
         dateString: '12/01/2019',
         dateSort: 20191201,
         note: 'Users could not log in',
@@ -15,7 +16,8 @@ export default [
         statusDescription: 'Deployment with Customer Impact'
       },
       {
-        date: new Date(2019, 11, 1),
+        // date: new Date(2019, 11, 1),
+        date: new Date('2019-12-01T06:00:00.000Z'),
         dateString: '12/01/2019',
         dateSort: 20191201,
         note: 'Fixed issues from the morning deployment',
@@ -24,7 +26,8 @@ export default [
         statusDescription: 'Good deployment'
       },
       {
-        date: new Date(2019, 11, 15),
+        // date: new Date(2019, 11, 15),
+        date: new Date('2019-12-15T06:00:00.000Z'),
         dateString: '12/15/2019',
         dateSort: 20191215,
         note: ':-)',
@@ -46,7 +49,8 @@ export default [
         status: 'C',
         statusDescription: 'Deployment with Customer Impact',
         dateString: '11/15/2019',
-        date: new Date(2019, 10, 15),
+        // date: new Date(2019, 10, 15),
+        date: new Date('2019-11-15T06:00:00.000Z'),
         dateSort: 20191115,
         note: 'Let\'s try some "BOLD" text'
       }
@@ -63,7 +67,8 @@ export default [
         status: 'G',
         statusDescription: 'Good deployment',
         dateString: '11/02/2019',
-        date: new Date(2019, 10, 2),
+        // date: new Date(2019, 10, 2),
+        date: new Date('2019-11-02T06:00:00.000Z'),
         dateSort: 20191102,
         note: 'Hooray everything went to plan'
       },
@@ -72,7 +77,8 @@ export default [
         status: 'O',
         statusDescription: 'Outage',
         dateString: '11/10/2019',
-        date: new Date(2019, 10, 10),
+        // date: new Date(2019, 10, 10),
+        date: new Date('2019-11-10T06:00:00.000Z'),
         dateSort: 20191110,
         note: 'People are trashing the database'
       },
@@ -81,7 +87,8 @@ export default [
         status: 'G',
         statusDescription: 'Good deployment',
         dateString: '12/01/2019',
-        date: new Date(2019, 11, 1),
+        // date: new Date(2019, 11, 1),
+        date: new Date('2019-12-01T06:00:00.000Z'),
         dateSort: 20191201,
         note: 'This is a note with\n\nLine breaks'
       },
@@ -90,7 +97,8 @@ export default [
         status: 'C',
         statusDescription: 'Deployment with Customer Impact',
         dateString: '12/02/2019',
-        date: new Date(2019, 11, 2),
+        // date: new Date(2019, 11, 2),
+        date: new Date('2019-12-02T06:00:00.000Z'),
         dateSort: 20191202,
         note: ''
       }
@@ -108,7 +116,8 @@ export default [
         status: 'B',
         statusDescription: 'Bad Deployment',
         dateString: '11/01/2019',
-        date: new Date(2019, 10, 1),
+        // date: new Date(2019, 10, 1),
+        date: new Date('2019-11-01T06:00:00.000Z'),
         dateSort: 20191101,
         note: 'Ooopsie!'
       },
@@ -117,7 +126,8 @@ export default [
         status: 'G',
         statusDescription: 'Good deployment',
         dateString: '11/10/2019',
-        date: new Date(2019, 10, 10),
+        // date: new Date(2019, 10, 10),
+        date: new Date('2019-11-10T06:00:00.000Z'),
         dateSort: 20191110,
         note: 'Some stuff happened but it was ALL GOOD'
       }

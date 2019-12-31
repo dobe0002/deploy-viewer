@@ -13,7 +13,7 @@ exports[`Timeline component tests Snapshot test 1`] = `
     onAppGroupChange={[Function]}
     onEndDateChange={[Function]}
     onStartDateChange={[Function]}
-    startDate={2019-11-01T05:00:00.000Z}
+    startDate={2019-11-01T06:00:00.000Z}
   />
   <Row
     tag="div"
@@ -50,9 +50,9 @@ exports[`Timeline component tests Snapshot test 1`] = `
           <TimelineHeaderRow
             dateArray={
               Array [
-                2019-11-01T05:00:00.000Z,
-                2019-11-02T05:00:00.000Z,
-                2019-11-03T05:00:00.000Z,
+                2019-11-01T06:00:00.000Z,
+                2019-11-02T06:00:00.000Z,
+                2019-11-03T06:00:00.000Z,
                 2019-11-04T06:00:00.000Z,
                 2019-11-05T06:00:00.000Z,
                 2019-11-06T06:00:00.000Z,
@@ -134,9 +134,9 @@ exports[`Timeline component tests Snapshot test 1`] = `
               appTitle="Cap"
               dateArray={
                 Array [
-                  2019-11-01T05:00:00.000Z,
-                  2019-11-02T05:00:00.000Z,
-                  2019-11-03T05:00:00.000Z,
+                  2019-11-01T06:00:00.000Z,
+                  2019-11-02T06:00:00.000Z,
+                  2019-11-03T06:00:00.000Z,
                   2019-11-04T06:00:00.000Z,
                   2019-11-05T06:00:00.000Z,
                   2019-11-06T06:00:00.000Z,
@@ -200,9 +200,9 @@ exports[`Timeline component tests Snapshot test 1`] = `
               appTitle="Ethos"
               dateArray={
                 Array [
-                  2019-11-01T05:00:00.000Z,
-                  2019-11-02T05:00:00.000Z,
-                  2019-11-03T05:00:00.000Z,
+                  2019-11-01T06:00:00.000Z,
+                  2019-11-02T06:00:00.000Z,
+                  2019-11-03T06:00:00.000Z,
                   2019-11-04T06:00:00.000Z,
                   2019-11-05T06:00:00.000Z,
                   2019-11-06T06:00:00.000Z,
@@ -253,7 +253,7 @@ exports[`Timeline component tests Snapshot test 1`] = `
               appStatusArray={
                 Array [
                   Object {
-                    "date": 2019-11-02T05:00:00.000Z,
+                    "date": 2019-11-02T06:00:00.000Z,
                     "dateSort": 20191102,
                     "dateString": "11/02/2019",
                     "note": "Hooray everything went to plan",
@@ -295,9 +295,9 @@ Line breaks",
               appTitle="Picker"
               dateArray={
                 Array [
-                  2019-11-01T05:00:00.000Z,
-                  2019-11-02T05:00:00.000Z,
-                  2019-11-03T05:00:00.000Z,
+                  2019-11-01T06:00:00.000Z,
+                  2019-11-02T06:00:00.000Z,
+                  2019-11-03T06:00:00.000Z,
                   2019-11-04T06:00:00.000Z,
                   2019-11-05T06:00:00.000Z,
                   2019-11-06T06:00:00.000Z,
@@ -348,7 +348,7 @@ Line breaks",
               appStatusArray={
                 Array [
                   Object {
-                    "date": 2019-11-01T05:00:00.000Z,
+                    "date": 2019-11-01T06:00:00.000Z,
                     "dateSort": 20191101,
                     "dateString": "11/01/2019",
                     "note": "Ooopsie!",
@@ -370,9 +370,9 @@ Line breaks",
               appTitle="Training Hub"
               dateArray={
                 Array [
-                  2019-11-01T05:00:00.000Z,
-                  2019-11-02T05:00:00.000Z,
-                  2019-11-03T05:00:00.000Z,
+                  2019-11-01T06:00:00.000Z,
+                  2019-11-02T06:00:00.000Z,
+                  2019-11-03T06:00:00.000Z,
                   2019-11-04T06:00:00.000Z,
                   2019-11-05T06:00:00.000Z,
                   2019-11-06T06:00:00.000Z,

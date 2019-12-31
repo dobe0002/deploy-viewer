@@ -52,8 +52,8 @@ describe('Timeline component tests', () => {
     document.body.appendChild(div);
     const wrapper = shallow(<Timeline deployData={sampleProps.deployData} />);
 
-    const startDate = new Date(2019, 10, 1);
-    const endDate = new Date(2019, 11, 15);
+    const startDate = new Date('2019-11-01T06:00:00.000Z');
+    const endDate = new Date('2019-12-15T06:00:00.000Z');
     const newStartDate = new Date(2019, 10, 15);
     const newEndDate = new Date(2019, 11, 31);
 
