@@ -22,15 +22,10 @@ jobs:
           npm run eslint
           npm run npmAuditJson
           node utils/testCoverage.js
-      - name: If not master
-        if: github.ref != 'refs/heads/master'
+      - name: If master - publish to gh-pages
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
-      - name: If master
-        if: github.ref == 'refs/heads/master'
-        env:
-          VERSION: $(node -p "require('./package.json').version")
-        run: echo Hello master
