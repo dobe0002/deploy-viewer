@@ -22,9 +22,14 @@ jobs:
           npm run eslint
           npm run npmAuditJson
           node utils/testCoverage.js
-      - name: If NOT master
+      - name: If not master
         if: github.ref != 'refs/heads/master'
-        run: echo ${{github.ref}}
+        env:
+          VERSION: $(node -p "require('./package.json').version")
+        run: echo "$VERSION"
+        #run: echo Commits to ${{github.ref}} will not be made into a release
       - name: If master
         if: github.ref == 'refs/heads/master'
+        env:
+          VERSION: $(node -p "require('./package.json').version")
         run: echo Hello master
