@@ -56,11 +56,14 @@ exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
               </Label>
               <t
                 allowSameDay={false}
+                customTimeInput={null}
                 dateFormat="MM/dd/yyyy"
                 dateFormatCalendar="LLLL yyyy"
                 disabled={false}
                 disabledKeyboardNavigation={false}
                 dropdownMode="scroll"
+                enableTabLoop={true}
+                excludeScrollbar={true}
                 id="timelineStartDate"
                 inlineFocusSelectedMonth={false}
                 maxDate={2019-03-02T06:00:00.000Z}
@@ -119,11 +122,14 @@ exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
               </Label>
               <t
                 allowSameDay={false}
+                customTimeInput={null}
                 dateFormat="MM/dd/yyyy"
                 dateFormatCalendar="LLLL yyyy"
                 disabled={false}
                 disabledKeyboardNavigation={false}
                 dropdownMode="scroll"
+                enableTabLoop={true}
+                excludeScrollbar={true}
                 id="timelineEndDate"
                 inlineFocusSelectedMonth={false}
                 minDate={2019-02-01T06:00:00.000Z}

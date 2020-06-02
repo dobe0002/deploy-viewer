@@ -8,6 +8,7 @@ import Thunder from './icons/Thunder';
 import DarkClouds from './icons/DarkClouds';
 import Question from './icons/Question';
 import Popover from './Popover';
+import Warning from './icons/Warning';
 
 export default class Status extends React.Component {
   static color(code) {
@@ -22,6 +23,8 @@ export default class Status extends React.Component {
         return '#cc0000';
       case 'M':
         return '#3f1898';
+      case 'I':
+        return '#1c4587';
       default:
         return '#999';
     }
@@ -40,6 +43,8 @@ export default class Status extends React.Component {
       case 'C':
         return <Thunder color={this.color(code)} />;
 
+      case 'I':
+        return <Warning color={this.color(code)} />;
       default:
         return <Question color={this.color(code)} />;
     }

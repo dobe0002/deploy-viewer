@@ -18,7 +18,7 @@
     "prettier:check": "prettier  --ignore-path ./.eslintignore --check '**/*.+(js|jsx|html|css|scss|json|json5)'",
     "prettier:watch": "onchange '**/*.+(js|jsx|html|css|scss|json|json5)' -- prettier --write {{changed}}",
     "prettier:write": "prettier  --ignore-path ./.eslintignore --write '**/*.+(js|jsx|html|css|scss|json|json5)'",
-    "test": "NODE_ENV=test && BABEL_DISABLE_CACHE=1 && jest --silent  ",
+    "test": "NODE_ENV=test && BABEL_DISABLE_CACHE=1 && jest   ",
     "test:update": "npm run test -- -u",
     "test:watch": "rm -f server/config/test.json5 && NODE_ENV=test && BABEL_DISABLE_CACHE=1 && jest --verbose  --forceExit --detectOpenHandles --watchAll "
   },

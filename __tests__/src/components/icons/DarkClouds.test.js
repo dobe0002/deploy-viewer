@@ -13,11 +13,12 @@ expect.extend(toHaveNoViolations);
 
 describe('Dark clouds icon component tests', () => {
   test('Accessibility check', async () => {
-    const wrapper = mount(<DarkClouds />);
+    const div1 = document.createElement('div');
+    document.body.appendChild(div1);
+    const wrapper = mount(<DarkClouds />, { attachTo: div1 });
     const results = await axe(wrapper.getDOMNode());
     // console.log('Axe violations', results.violations);
     expect(results).toHaveNoViolations();
-    // console.log(wrapper.html());
   });
   test('Loading is SVG based', () => {
     const loading = shallow(<DarkClouds />);

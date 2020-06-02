@@ -20,7 +20,7 @@ exports[`Popover component tests Snapshot test 1`] = `
         autohide={false}
         delay={
           Object {
-            "hide": 0,
+            "hide": 50,
             "show": 0,
           }
         }

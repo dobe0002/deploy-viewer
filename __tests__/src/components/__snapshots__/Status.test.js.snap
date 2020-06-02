@@ -108,7 +108,7 @@ exports[`Status component tests Snapshot test cell with popover 1`] = `
             autohide={false}
             delay={
               Object {
-                "hide": 0,
+                "hide": 50,
                 "show": 0,
               }
             }
@@ -270,7 +270,7 @@ c15.062,0,27.273,12.208,27.273,27.272C99.999,60.517,87.786,72.729,72.724,72.729z
             autohide={false}
             delay={
               Object {
-                "hide": 0,
+                "hide": 50,
                 "show": 0,
               }
             }

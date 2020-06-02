@@ -17,32 +17,6 @@ configure({ adapter: new Adapter() });
 const { axe, toHaveNoViolations } = require('jest-axe');
 
 expect.extend(toHaveNoViolations);
-/*
-icon
-icon + popover
-tableCell
-tableCell + popover
-text
-
-*/
-
-/* Here is what should be tested:
-
-
-
-
-  Snapshot
-    icon (is icon and no popover)
-    icon + popover (is icon and popover)
-    tableCell (is cell and no popover)
-    tableCell + popover (is cell and popover)
-    text
-
-  
-  Popover body (this can be snapshot test too)
-
-
-*/
 
 describe('Status component tests', () => {
   const sampleProps = {
