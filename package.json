@@ -1,6 +1,6 @@
 {
   "name": "build-viewer",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Visualization for RAS/C Deploys.",
   "homepage": "https://pages.github.umn.edu/dobe0002/BuildViewer/",
   "repository": "https://github.umn.edu/dobe0002/BuildViewer",
