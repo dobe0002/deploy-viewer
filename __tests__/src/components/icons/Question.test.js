@@ -13,7 +13,11 @@ expect.extend(toHaveNoViolations);
 
 describe('Question icon component tests', () => {
   test('Accessibility check', async () => {
-    const wrapper = mount(<Question />);
+    const wrapper = mount(
+      <main>
+        <Question />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.getDOMNode());
     // console.log('Axe violations', results.violations);
     expect(results).toHaveNoViolations();

@@ -15,7 +15,12 @@ describe('Dark clouds icon component tests', () => {
   test('Accessibility check', async () => {
     const div1 = document.createElement('div');
     document.body.appendChild(div1);
-    const wrapper = mount(<DarkClouds />, { attachTo: div1 });
+    const wrapper = mount(
+      <main>
+        <DarkClouds />
+      </main>,
+      { attachTo: div1 }
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.getDOMNode());
     // console.log('Axe violations', results.violations);
     expect(results).toHaveNoViolations();

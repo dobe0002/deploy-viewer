@@ -54,7 +54,7 @@ exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
               >
                 Start
               </Label>
-              <t
+              <o
                 allowSameDay={false}
                 customTimeInput={null}
                 dateFormat="MM/dd/yyyy"
@@ -89,12 +89,14 @@ exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
                 renderDayContents={[Function]}
                 selected={2019-02-01T06:00:00.000Z}
                 shouldCloseOnSelect={true}
+                showFullMonthYearPicker={false}
                 showMonthYearPicker={false}
                 showPopperArrow={true}
                 showPreviousMonths={false}
                 showQuarterYearPicker={false}
                 showTimeInput={false}
                 showTimeSelect={false}
+                showYearPicker={false}
                 strictParsing={false}
                 timeCaption="Time"
                 timeInputLabel="Time"
@@ -120,7 +122,7 @@ exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
               >
                 End
               </Label>
-              <t
+              <o
                 allowSameDay={false}
                 customTimeInput={null}
                 dateFormat="MM/dd/yyyy"
@@ -155,12 +157,14 @@ exports[`FilterDateAppGroup  tests Snapshot test 1`] = `
                 renderDayContents={[Function]}
                 selected={2019-03-02T06:00:00.000Z}
                 shouldCloseOnSelect={true}
+                showFullMonthYearPicker={false}
                 showMonthYearPicker={false}
                 showPopperArrow={true}
                 showPreviousMonths={false}
                 showQuarterYearPicker={false}
                 showTimeInput={false}
                 showTimeSelect={false}
+                showYearPicker={false}
                 strictParsing={false}
                 timeCaption="Time"
                 timeInputLabel="Time"
