@@ -41,7 +41,11 @@ describe('FilterDateAppGroup  tests', () => {
   });
 
   test('Accessibility check', async () => {
-    const wrapper = shallow(<FilterDateAppGroup />);
+    const wrapper = shallow(
+      <main>
+        <FilterDateAppGroup />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.html());
     expect(results).toHaveNoViolations();
   });

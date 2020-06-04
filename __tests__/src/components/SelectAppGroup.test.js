@@ -18,8 +18,10 @@ describe('SelectAppGroup component tests', () => {
   };
   test('Accessibility check', async () => {
     const wrapper = shallow(
-      <SelectAppGroup appGroups={sampleProps.appGroups} />
-    );
+      <main>
+        <SelectAppGroup appGroups={sampleProps.appGroups} />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.html());
     expect(results).toHaveNoViolations();
   });

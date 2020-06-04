@@ -21,7 +21,11 @@ describe('Timeline component tests', () => {
     const div = document.createElement('div');
     div.id = 'popover2';
     document.body.appendChild(div);
-    const wrapper = shallow(<Timeline deployData={sampleProps.deployData} />);
+    const wrapper = shallow(
+      <main>
+        <Timeline deployData={sampleProps.deployData} />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.html());
     expect(results).toHaveNoViolations();
   });

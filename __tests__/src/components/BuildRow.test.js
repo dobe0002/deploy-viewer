@@ -35,11 +35,13 @@ describe('Build Rows tests', () => {
   };
   test('Accessibility check', async () => {
     const wrapper = shallow(
-      <BuildRow
-        appTitle={sampleProps.appTitle}
-        appStatus={sampleProps.appStatus}
-      />
-    );
+      <main>
+        <BuildRow
+          appTitle={sampleProps.appTitle}
+          appStatus={sampleProps.appStatus}
+        />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.html());
     // console.log('Axe violations', results.violations);
     expect(results).toHaveNoViolations();

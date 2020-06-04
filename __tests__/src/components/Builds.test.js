@@ -17,7 +17,11 @@ describe('Builds  tests', () => {
     deployData
   };
   test('Accessibility check', async () => {
-    const wrapper = shallow(<Builds deployData={sampleProps.deployData} />);
+    const wrapper = shallow(
+      <main>
+        <Builds deployData={sampleProps.deployData} />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.html());
     expect(results).toHaveNoViolations();
   });

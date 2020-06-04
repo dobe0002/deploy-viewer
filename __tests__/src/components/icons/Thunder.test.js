@@ -13,7 +13,11 @@ expect.extend(toHaveNoViolations);
 
 describe('Thunder icon component tests', () => {
   test('Accessibility check', async () => {
-    const wrapper = mount(<Thunder />);
+    const wrapper = mount(
+      <main>
+        <Thunder />
+      </main>
+    ); // Main tag is needed to prevent landmark errors
     const results = await axe(wrapper.getDOMNode());
     // console.log('Axe violations', results.violations);
     expect(results).toHaveNoViolations();
